@@ -4,7 +4,7 @@ import { PlusOutlined } from '@ant-design/icons';
 import dayjs from 'dayjs';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080/api/customers';
+const API_URL = '/api/customers';
 
 const CustomersPage = () => {
   const [customers, setCustomers] = useState([]);
