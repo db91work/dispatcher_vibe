@@ -1,0 +1,14 @@
+{
+  "name": "dispatcher-vibe",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently --names backend,frontend --prefix-colors blue,green \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && mvn spring-boot:run",
+    "frontend": "cd frontend && npm start",
+    "install:frontend": "cd frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0"
+  }
+}
